@@ -9,13 +9,22 @@
 /* Begin PBXBuildFile section */
 		727F87C429B543420093B1DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727F87C329B543420093B1DA /* AppDelegate.swift */; };
 		727F87C629B543420093B1DA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727F87C529B543420093B1DA /* SceneDelegate.swift */; };
-		727F87C829B543420093B1DA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727F87C729B543420093B1DA /* ViewController.swift */; };
-		727F87CB29B543420093B1DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 727F87C929B543420093B1DA /* Main.storyboard */; };
 		727F87CD29B543440093B1DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 727F87CC29B543440093B1DA /* Assets.xcassets */; };
 		727F87D029B543440093B1DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 727F87CE29B543440093B1DA /* LaunchScreen.storyboard */; };
 		727F87DB29B543440093B1DA /* FirstAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727F87DA29B543440093B1DA /* FirstAppTests.swift */; };
 		727F87E529B543440093B1DA /* FirstAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727F87E429B543440093B1DA /* FirstAppUITests.swift */; };
 		727F87E729B543440093B1DA /* FirstAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727F87E629B543440093B1DA /* FirstAppUITestsLaunchTests.swift */; };
+		727F87F429B543F40093B1DA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 727F87F329B543F40093B1DA /* GoogleService-Info.plist */; };
+		727F87F729B545020093B1DA /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 727F87F629B545020093B1DA /* FirebaseAnalytics */; };
+		727F87F929B545020093B1DA /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */ = {isa = PBXBuildFile; productRef = 727F87F829B545020093B1DA /* FirebaseAnalyticsWithoutAdIdSupport */; };
+		727F87FB29B545BA0093B1DA /* CustonButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727F87FA29B545BA0093B1DA /* CustonButton.swift */; };
+		727F87FE29B54AD80093B1DA /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 727F87FD29B54AD80093B1DA /* IQKeyboardManagerSwift */; };
+		727F880129B550B60093B1DA /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 727F880029B550B60093B1DA /* FirebaseAuth */; };
+		727F880329B550B60093B1DA /* FirebaseAuthCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 727F880229B550B60093B1DA /* FirebaseAuthCombine-Community */; };
+		727F880829B55BAD0093B1DA /* LogoutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727F880629B55BAD0093B1DA /* LogoutVC.swift */; };
+		727F880929B55BAD0093B1DA /* LogoutVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 727F880729B55BAD0093B1DA /* LogoutVC.xib */; };
+		727F880E29B55CD40093B1DA /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727F880C29B55CD40093B1DA /* LoginVC.swift */; };
+		727F880F29B55CD40093B1DA /* LoginVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 727F880D29B55CD40093B1DA /* LoginVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +48,6 @@
 		727F87C029B543420093B1DA /* FirstApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirstApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		727F87C329B543420093B1DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		727F87C529B543420093B1DA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		727F87C729B543420093B1DA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		727F87CA29B543420093B1DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		727F87CC29B543440093B1DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		727F87CF29B543440093B1DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		727F87D129B543440093B1DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +56,12 @@
 		727F87E029B543440093B1DA /* FirstAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FirstAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		727F87E429B543440093B1DA /* FirstAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstAppUITests.swift; sourceTree = "<group>"; };
 		727F87E629B543440093B1DA /* FirstAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		727F87F329B543F40093B1DA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		727F87FA29B545BA0093B1DA /* CustonButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustonButton.swift; sourceTree = "<group>"; };
+		727F880629B55BAD0093B1DA /* LogoutVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutVC.swift; sourceTree = "<group>"; };
+		727F880729B55BAD0093B1DA /* LogoutVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LogoutVC.xib; sourceTree = "<group>"; };
+		727F880C29B55CD40093B1DA /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		727F880D29B55CD40093B1DA /* LoginVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +69,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				727F87F729B545020093B1DA /* FirebaseAnalytics in Frameworks */,
+				727F87F929B545020093B1DA /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */,
+				727F87FE29B54AD80093B1DA /* IQKeyboardManagerSwift in Frameworks */,
+				727F880129B550B60093B1DA /* FirebaseAuth in Frameworks */,
+				727F880329B550B60093B1DA /* FirebaseAuthCombine-Community in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,13 +117,15 @@
 		727F87C229B543420093B1DA /* FirstApp */ = {
 			isa = PBXGroup;
 			children = (
+				727F880B29B55CBA0093B1DA /* LoginVC */,
+				727F880A29B55BB20093B1DA /* LogoutVC */,
 				727F87C329B543420093B1DA /* AppDelegate.swift */,
 				727F87C529B543420093B1DA /* SceneDelegate.swift */,
-				727F87C729B543420093B1DA /* ViewController.swift */,
-				727F87C929B543420093B1DA /* Main.storyboard */,
 				727F87CC29B543440093B1DA /* Assets.xcassets */,
 				727F87CE29B543440093B1DA /* LaunchScreen.storyboard */,
 				727F87D129B543440093B1DA /* Info.plist */,
+				727F87F329B543F40093B1DA /* GoogleService-Info.plist */,
+				727F87FA29B545BA0093B1DA /* CustonButton.swift */,
 			);
 			path = FirstApp;
 			sourceTree = "<group>";
@@ -127,6 +147,24 @@
 			path = FirstAppUITests;
 			sourceTree = "<group>";
 		};
+		727F880A29B55BB20093B1DA /* LogoutVC */ = {
+			isa = PBXGroup;
+			children = (
+				727F880629B55BAD0093B1DA /* LogoutVC.swift */,
+				727F880729B55BAD0093B1DA /* LogoutVC.xib */,
+			);
+			path = LogoutVC;
+			sourceTree = "<group>";
+		};
+		727F880B29B55CBA0093B1DA /* LoginVC */ = {
+			isa = PBXGroup;
+			children = (
+				727F880C29B55CD40093B1DA /* LoginVC.swift */,
+				727F880D29B55CD40093B1DA /* LoginVC.xib */,
+			);
+			path = LoginVC;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +181,13 @@
 			dependencies = (
 			);
 			name = FirstApp;
+			packageProductDependencies = (
+				727F87F629B545020093B1DA /* FirebaseAnalytics */,
+				727F87F829B545020093B1DA /* FirebaseAnalyticsWithoutAdIdSupport */,
+				727F87FD29B54AD80093B1DA /* IQKeyboardManagerSwift */,
+				727F880029B550B60093B1DA /* FirebaseAuth */,
+				727F880229B550B60093B1DA /* FirebaseAuthCombine-Community */,
+			);
 			productName = FirstApp;
 			productReference = 727F87C029B543420093B1DA /* FirstApp.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +260,11 @@
 				Base,
 			);
 			mainGroup = 727F87B729B543420093B1DA;
+			packageReferences = (
+				727F87F529B545020093B1DA /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				727F87FC29B54AD80093B1DA /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+				727F87FF29B550B60093B1DA /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 727F87C129B543420093B1DA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -231,9 +281,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				727F880F29B55CD40093B1DA /* LoginVC.xib in Resources */,
 				727F87D029B543440093B1DA /* LaunchScreen.storyboard in Resources */,
+				727F880929B55BAD0093B1DA /* LogoutVC.xib in Resources */,
+				727F87F429B543F40093B1DA /* GoogleService-Info.plist in Resources */,
 				727F87CD29B543440093B1DA /* Assets.xcassets in Resources */,
-				727F87CB29B543420093B1DA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +310,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				727F87C829B543420093B1DA /* ViewController.swift in Sources */,
+				727F87FB29B545BA0093B1DA /* CustonButton.swift in Sources */,
+				727F880E29B55CD40093B1DA /* LoginVC.swift in Sources */,
 				727F87C429B543420093B1DA /* AppDelegate.swift in Sources */,
 				727F87C629B543420093B1DA /* SceneDelegate.swift in Sources */,
+				727F880829B55BAD0093B1DA /* LogoutVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +351,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		727F87C929B543420093B1DA /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				727F87CA29B543420093B1DA /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		727F87CE29B543440093B1DA /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -441,7 +487,6 @@
 				INFOPLIST_FILE = FirstApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -468,7 +513,6 @@
 				INFOPLIST_FILE = FirstApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -596,6 +640,61 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		727F87F529B545020093B1DA /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		727F87FC29B54AD80093B1DA /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.5.0;
+			};
+		};
+		727F87FF29B550B60093B1DA /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		727F87F629B545020093B1DA /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 727F87F529B545020093B1DA /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		727F87F829B545020093B1DA /* FirebaseAnalyticsWithoutAdIdSupport */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 727F87F529B545020093B1DA /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsWithoutAdIdSupport;
+		};
+		727F87FD29B54AD80093B1DA /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 727F87FC29B54AD80093B1DA /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
+		};
+		727F880029B550B60093B1DA /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 727F87F529B545020093B1DA /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		727F880229B550B60093B1DA /* FirebaseAuthCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 727F87F529B545020093B1DA /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseAuthCombine-Community";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 727F87B829B543420093B1DA /* Project object */;
 }
