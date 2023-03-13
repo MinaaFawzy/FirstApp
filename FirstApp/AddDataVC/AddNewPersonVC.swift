@@ -19,9 +19,14 @@ class AddNewPersonVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+            super.viewWillAppear(animated)
+            navigationController?.navigationBar.isHidden = true
+        }
 
     @IBAction func backButtonPressed(_ sender: Any) {
-        dismiss(animated: true)
+        self.navigationController?.popViewController(animated: true)
     }
     
     @IBAction func AddNewPersonButtonPressed(_ sender: Any) {
@@ -29,7 +34,7 @@ class AddNewPersonVC: UIViewController {
             let addPerson = Person(name: firstNameTF.text!, lname: lastNameTF.text!, age: ageTF.text!)
             let addPersonRef = self.ref.childByAutoId()
             addPersonRef.setValue(addPerson.toAnyObject())
-            dismiss(animated: true)
+            self.navigationController?.popViewController(animated: true)
         }
         
     }

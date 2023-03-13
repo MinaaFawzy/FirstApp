@@ -21,18 +21,21 @@ class UpdateDataVC: UIViewController {
             self.lastNameTF.text = lname
             self.ageTF.text = age
         }
-        
-        
+
     }
+    override func viewWillAppear(_ animated: Bool) {
+            super.viewWillAppear(animated)
+            navigationController?.navigationBar.isHidden = true
+        }
     @IBAction func updateButtonPressed(_ sender: Any) {
         if firstNameTF.text?.isEmpty == false && lastNameTF.text?.isEmpty == false && ageTF.text?.isEmpty == false {
             let updatePerson = Person(name: firstNameTF.text!, lname: lastNameTF.text!, age: ageTF.text!)
             ref.child(personID).updateChildValues(updatePerson.toAnyObject() as! [AnyHashable:Any])
-            dismiss(animated: true)
+            self.navigationController?.popViewController(animated: true)
         }
     }
     
     @IBAction func backButtonPressed(_ sender: Any) {
-        dismiss(animated: true)
+        self.navigationController?.popViewController(animated: true)
     }
 }

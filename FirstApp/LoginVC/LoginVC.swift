@@ -16,8 +16,7 @@ class LoginVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
-    }
+       }
 
 
     
@@ -39,8 +38,7 @@ class LoginVC: UIViewController {
                 UserDefaults.standard.setValue(token, forKey: "token")
                 Auth.auth().addStateDidChangeListener { resutl, user in
                     let vc = HomeVC()
-                    vc.modalPresentationStyle = .fullScreen
-                    self.present(vc, animated: true)
+                    self.navigationController?.pushViewController(vc, animated: true)
                 }
             } else {
                 let alert = UIAlertController(title: "login Faild", message: error?.localizedDescription, preferredStyle: .alert)

@@ -18,12 +18,12 @@ class LogoutVC: UIViewController {
         
         do {
             try? Auth.auth().signOut()
-            UserDefaults.standard.setValue("", forKey: "token")
+            UserDefaults.standard.setValue(nil, forKey: "token")
         }
         	
         let vc = LoginVC()
-        vc.modalPresentationStyle = .fullScreen
-        present(vc, animated: true)
+        self.navigationController?.setViewControllers([vc], animated: true)
+        
     }
     
 

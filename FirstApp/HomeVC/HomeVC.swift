@@ -16,16 +16,19 @@ class HomeVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         getData()
         
     }
-
+    override func viewWillAppear(_ animated: Bool) {
+            super.viewWillAppear(animated)
+            navigationController?.navigationBar.isHidden = true
+        }
+    
     @IBAction func LogoutButtonPressed(_ sender: Any) {
+        
         let vc = LogoutVC()
-        vc.modalPresentationStyle = .fullScreen
-        present(vc, animated: true)
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     @IBAction func addButtonPressed(_ sender: Any) {
-        let vc = AddNewPersonVC()
-        vc.modalPresentationStyle = .fullScreen
-        present(vc, animated: true)
+        let vc:AddNewPersonVC = AddNewPersonVC()
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     func getData() {
@@ -75,7 +78,6 @@ extension HomeVC {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let vc = UpdateDataVC()
         vc.personID = item[indexPath.row].key
-        vc.modalPresentationStyle = .fullScreen
-        present(vc, animated: true)
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 }
