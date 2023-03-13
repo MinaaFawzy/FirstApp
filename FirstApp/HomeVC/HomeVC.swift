@@ -12,12 +12,16 @@ class HomeVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     var personId = ""
     override func viewDidLoad() {
         super.viewDidLoad()
-        let token = UserDefaults.standard.value(forKey: "token")
         tableSetup()
         getData()
         
     }
 
+    @IBAction func LogoutButtonPressed(_ sender: Any) {
+        let vc = LogoutVC()
+        vc.modalPresentationStyle = .fullScreen
+        present(vc, animated: true)
+    }
     @IBAction func addButtonPressed(_ sender: Any) {
         let vc = AddNewPersonVC()
         vc.modalPresentationStyle = .fullScreen

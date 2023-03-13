@@ -17,7 +17,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         if  Auth.auth().currentUser != nil{
             if let windowScene = scene as? UIWindowScene {
                 let window = UIWindow(windowScene: windowScene)
-                window.rootViewController = LogoutVC()
+                window.rootViewController = HomeVC()
                 self.window = window
                 window.makeKeyAndVisible()
             }
