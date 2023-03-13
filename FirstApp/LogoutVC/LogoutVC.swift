@@ -6,17 +6,20 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class LogoutVC: UIViewController {
 
     override func viewDidLoad() {
-        super.viewDidLoad()
-        
+        super.viewDidLoad()        
+        print(UserDefaults.standard.value(forKey: "token"))
     }
 
     @IBAction func logoutButton(_ sender: Any) {
-        UserDefaults.standard.setValue("", forKey: "email")
-        print(UserDefaults.standard.value(forKey: "email"))
+        
+        
+        do {try? Auth.auth().signOut()}
+        	
         let vc = LoginVC()
         vc.modalPresentationStyle = .fullScreen
         present(vc, animated: true)

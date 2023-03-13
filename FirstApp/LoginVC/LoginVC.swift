@@ -35,13 +35,18 @@ class LoginVC: UIViewController {
         Auth.auth().signIn(withEmail: email, password: pass){ authResult, error in
             //guard let strongSelf = self else { return }
             if authResult != nil {
-                print("Done")
-                UserDefaults.standard.setValue(email, forKey: "email")
-                let vc = LogoutVC()
-                vc.modalPresentationStyle = .fullScreen
-                self.present(vc, animated: true)
+                let token = Auth.auth().currentUser?.uid
+                UserDefaults.standard.setValue(token, forKey: "token")
+                Auth.auth().addStateDidChangeListener { resutl, user in
+                    let vc = HomeVC()
+                    vc.modalPresentationStyle = .fullScreen
+                    self.present(vc, animated: true)
+                }
             } else {
-                print(error!)
+                let alert = UIAlertController(title: "login Faild", message: error?.localizedDescription, preferredStyle: .alert)
+                let action = UIAlertAction(title: "Ok", style: .cancel)
+                alert.addAction(action)
+                self.present(alert, animated: true)
           }
         }
         
@@ -50,9 +55,15 @@ class LoginVC: UIViewController {
     func signup(email: String, pass: String){
         Auth.auth().createUser(withEmail: email, password: pass){ authResult, error in
             if authResult != nil {
-                print("Done")
+                let alert = UIAlertController(title: "Created Account Succssfuly", message:nil , preferredStyle: .alert)
+                let action = UIAlertAction(title: "Ok", style: .cancel)
+                alert.addAction(action)
+                self.present(alert, animated: true)
             } else {
-                print(error?.localizedDescription)
+                let alert = UIAlertController(title: "Created Account Faild", message:error?.localizedDescription , preferredStyle: .alert)
+                let action = UIAlertAction(title: "Ok", style: .cancel)
+                alert.addAction(action)
+                self.present(alert, animated: true)
           }
 
         }
